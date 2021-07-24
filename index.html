@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lnag="en">
+<html lang="en">
     <head>
         <title>Kenneth Sloane</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device=width, initial=scale=1.0" />
         <title>Document</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
     <body id="top">
-       <header>
-           <a href="#top">Kenneth Sloane</a>
+       <header class="w-full bg-yellow-600 text-white md:flex md:justify-between">
+           <a class="font-bold block px-8 py-4" href="#top">Kenneth Sloane</a>
            <nav>
-               <ul>
+               <ul class="flex">
                    <li>
-                       <a href="#hero">Hero</a>
+                       <a class="block px-8 py-4 hover:bg-yellow-700" href="#about">About Me</a>
                    </li>
                    <li>
-                       <a href="#about">About</a>
+                       <a class="block px-8 py-4 hover:bg-yellow-700" href="#hobbies">Hobbies</a>
                    </li>
                    <li>
-                      <a href="#tech-support">Tech Support</a> 
+                      <a class="block px-8 py-4 hover:bg-yellow-700" href="#pets">Pets</a> 
                    </li>
 
                </ul>
@@ -26,57 +27,89 @@
        </header>
 
        <main>
-           <section id="hero">
-               <p>It's Kenneth from</p>
-               <h1>Charleston</h1>
-               <p> Industrial Engineering * Japanese</p>
-           </section>
+            <section id="about" class="bg-purple-700 text-white body-font font-mono">
+                <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+                    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded-full" src="headshot.jpg">
+                    <div class="text-center lg:w-2/3 w-full">
+                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-mono text-white">Kenneth Sloane</h1>
+                        <p class="mb-8 leading-relaxed">Hello TRACE Camp! My name is Kenneth Sloane. I am a senior Industrial Engineering major graduating on August 6th, 2021. I was born in Okinawa, Japan and raised in Charleston, SC. I'm looking forward to learning together with y'all!</p>
+                        <div>
+                            <a
+                                href="https://www.linkedin.com/in/kennethsloane/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                class="bg-white rounded-lg px-8 py-4 text-black inline-block"
+                            >Connect on Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-           <section id="about">
-               <h2>About</h2>
-               <ul>
-                   <li>
-                       <img src="NIS.jpg" />
-                       <h3>Night in Saigon</h3>
-                       <p>I enjoy design</p>
+           <section id="hobbies" class="bg-yellow-600 text-gray-500 body-font font-mono">
+               <h2 class="p-5 text-center text-3xl font-bold underline text-gray-900">Hobbies</h2>
+               <ul class="grid p-10 gap-10 md:grid-cols-3">
+                   <li class="bg-white shadow rounded-lg overflow-hidden">
+                       <img src="food.jpg" class="w-full"/>
+                       <div class="p-4">
+                            <h3 class="font-bold text-black">Cooking</h3>
+                            <p>I really enjoy cooking at home! Here's a picture of some fried rice spam musubi I brought to a potluck.</p>
+                       </div>
+                       
                    </li>
-                   <li>
-                       <img src="SCCMA Background.png"/>
-                       <h3>Programming</h3>
-                       <p>Text about programming</p>
+                   <li class="bg-white shadow rounded-lg overflow-hidden">
+                       <img src="NIS group.JPG" class="w-full" />
+                       <div class="p-4">
+                            <h3 class="font-bold text-black">Clemson Asian Student Association</h3>
+                            <p>Some of my best memories from college are from my time in the Clemson Asian Student Association. This past year I was actually President. Look at all these good lookin' people.</p>
+                       </div>
                    </li>
-                   <li>
-                       <img src="Yotsuba Cute.jpg"/>
-                       <h3>Taco Tuesdays</h3>
-                       <p>Best day of the week</p>
+                   <li class="bg-white shadow rounded-lg overflow-hidden">
+                       <img src="stardew valley.jpg" class="w-full"/>
+                       <div class="p-4">
+                            <h3 class="font-bold text-black">Video Games</h3>
+                            <p>In my free time (or when I'm procrastinating), I like to play videos games. Currently I'm playing Stardew Valley on my Switch! Do you want to see the spreadsheets I've made?</p>
+                       </div>
                    </li>
                </ul>
            </section>
 
-           <section id="tech-support">
-            <h2>Tech Support</h2>    
-            <ul>
-                <li>
-                    <img />
-                    <h3>Kenneth Sloane</h3>
-                    <p>Charleston, SC</p>
-                </li>
-                <li>
-                    <img />
-                    <h3>Sammy Sloane</h3>
-                    <p>Charleston, SC</p>
-                </li>
-                <li>
-                    <img />
-                    <h3>Yuria Sloane</h3>
-                    <p>Charleston, SC</p>
-                </li>
-            </ul>
-           </section>
+           <section id="pets" class="bg-purple-700 text-white body-font font-mono">
+                <h2 class="p-5 text-center text-2xl font-bold underline">Pets</h2>    
+                <section class="body-font">
+                    <div class="container px-5 py-5 mx-auto">
+                        <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+                            <div class="sm:w-1/2 mb-10 px-4">
+                                <div class="rounded-lg overflow-hidden">
+                                    <img class="object-cover object-center h-full w-full" src="Guppy.jpg">
+                                </div>
+                                <h2 class="title-font text-2xl font-medium mt-6 mb-3">Guppy</h2>
+                                <p class="leading-relaxed text-base">Here is my Guppy! She is a beagle mix. My family adopted her as a puppy in July of 2010. She got her name from the huge stomach she had as a puppy, which reminded us of a guppy/goldfish or something I guess?</p>
+                            </div>
+                            <div class="sm:w-1/2 mb-10 px-4">
+                                <div class="rounded-lg overflow-hidden">
+                                    <img class="object-cover object-center h-full w-full" src="Coco.jpg">
+                                </div>
+                                <h2 class="title-font text-2xl font-medium mt-6 mb-3">Coco</h2>
+                                <p class="leading-relaxed text-base">Here is Coco! She is a russel terrier that we adopted in June of 2017. Her name is actually short for "Coconut" on account of her whispy, white fur that reminds us of shredded coconut.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="bg-purple-700 py-3 text-center">
+                    <nav>
+                        <ul>
+                            <a
+                                href="#top"
+                                class=" bg-white rounded-lg px-8 py-4 text-black text-center overflow-hidden hover:bg-grey-400"
+                            >Back to Top</a>
+                        </ul>
+                    </nav>
+                </footer>
+            </section>
        </main>
-
-       <footer>
-           c 2020 Kenneth SLoane. All rights reserved.
+       
+       <footer class="text-white bg-gray-800 p-10 italic text-center">
+        © 2021 Kenneth Sloane. All rights reserved.
        </footer>
        </h> 
     </body>
